@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>A Simple Form </h1>
+            <h2>Form Fundamentals</h2>
+                <form action="https://formspree.io/your@email.com" method="POST" autocomplete="on">
+                    <fieldset>
+                        <legend>Customer Info</legend>
+                        <label for='name'>Name:</label><input type="text" name='name' id='name' placeholder="Enter your name" required><br>
+                        <label for='phone'>Telephone:</label><input type="tel" name='phone' id='phone' placeholder="Pattern: 1-234-567-8910" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" title="please use specified format"><br>
+                        <label for="mail">Email address:</label><input type="email" name='mail' id='mail' placeholder="Enter your email address" multiple required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Books</legend>
+                        <input list='books'>
+                        <datalist id='books'>
+                            <option value="Kant"></option>
+                            <option value="Freud"></option>
+                            <option value="Nietsche"></option>
+                            <option value="Politics"></option>
+                            <option value="Society"></option>
+                        </datalist>
+                        <label for="number">Quantity (maximum 5):</label><input type="number" id='number' name='number' min="1" max="5">
+                        <input type="submit">
+                    </fieldset>
+                </form>
+    </section>
+</body>
+</html>

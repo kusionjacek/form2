@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+section{
+    padding: 20px;
+}
+
+input{
+    
+    margin-bottom: 20px
+}
+
+h1{
+    color: darkblue;
+}
+h2{
+    font-size: 1em;
+    color: rgba(138, 43, 226, 0.5);
+}
